@@ -12,7 +12,7 @@ install:
 	npm install
 
 serve:
-	$(COFFEE) ./app.coffee
+	$(COFFEE) ./src/app.coffee
 
 sup:
 	$(SUPERVISOR) make -- serve
