@@ -17,10 +17,10 @@ Get it.
 
 Continuously run tests on it.
 
-    make tester
+    make dev-test
 
-Serve it for yourself.
+Continuously serve it for yourself.
 
-    make serve
+    make dev-serve
 
 Edit as you will.

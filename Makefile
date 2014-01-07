@@ -1,5 +1,5 @@
 COFFEE = ./node_modules/.bin/coffee
-SUPERVISOR = supervisor \
+SUPERVISOR = ./node_modules/.bin/supervisor \
 						 --extensions 'coffee' \
 						 --no-restart-on exit \
 						 --exec
@@ -14,7 +14,7 @@ install:
 serve:
 	$(COFFEE) ./src/app.coffee
 
-sup:
+dev-serve:
 	$(SUPERVISOR) make -- serve
 
 test:
@@ -23,5 +23,5 @@ test:
 test-min:
 	$(MOCHA) --reporter min
 
-tester:
+dev-test:
 	$(SUPERVISOR) make -- test-min

@@ -16,6 +16,7 @@
   "devDependencies": {
     "mocha": "~1.16.2",
     "should": "~2.1.1",
-    "zombie": "~2.0.0-alpha24"
+    "zombie": "~2.0.0-alpha24",
+    "supervisor": "~0.5.6"
   }
 }
