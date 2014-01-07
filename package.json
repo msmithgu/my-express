@@ -10,5 +10,8 @@
     "jade": "*",
     "stylus": "*",
     "coffee-script": "~1.6.3"
+  },
+  "devDependencies": {
+    "mocha": "~1.16.2"
   }
 }
