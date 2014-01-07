@@ -28,6 +28,8 @@ if 'development' == app.get('env')
 
 app.get '/', routes.index
 app.get '/users', user.list
+app.get '/hi', (req, res)->
+  res.send 'hi'
 
 if not module.parent
   http.createServer(app).listen app.get('port'), ()->
