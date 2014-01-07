@@ -2,8 +2,10 @@
   "name": "application-name",
   "version": "0.0.1",
   "private": true,
+  "main": "src/app",
   "scripts": {
-    "start": "make serve"
+    "start": "make serve",
+    "test": "make test"
   },
   "dependencies": {
     "express": "3.4.7",

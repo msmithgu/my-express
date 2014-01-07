@@ -5,7 +5,7 @@ user = require './routes/user'
 http = require 'http'
 path = require 'path'
 
-app = express()
+app = module.exports = express()
 
 # all environments
 app.set 'port', process.env.PORT || 3000
@@ -29,5 +29,6 @@ if 'development' == app.get('env')
 app.get '/', routes.index
 app.get '/users', user.list
 
-http.createServer(app).listen app.get('port'), ()->
-  console.log('Express server listening at http://0.0.0.0:' + app.get('port'))
+if not module.parent
+  http.createServer(app).listen app.get('port'), ()->
+    console.log('Express server listening at http://0.0.0.0:' + app.get('port'))
